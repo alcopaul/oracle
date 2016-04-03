@@ -31,16 +31,16 @@ namespace WindowsFormsApplication1
 
         private  void TimerEventProcessor(Object myObject, EventArgs myEventArgs)
         {
-            label1.Text = Calk(g.Next(0, 9), g1);
-            label2.Text = Calk(g.Next(0, 9), g1);
-            label3.Text = Calk(g.Next(0, 9), g1);
-            label4.Text = Calk(g.Next(0, 9), g1);
-            label5.Text = Calk(g.Next(0, 9), g1);
-            label6.Text = Calk(g.Next(0, 9), g1);
-            label7.Text = Calk(g.Next(0, 9), g1);
-            label8.Text = Calk(g.Next(0, 9), g1);
-            label9.Text = Calk(g.Next(0, 9), g1);
-            label10.Text = Calk(g.Next(0, 9), g1);
+            label1.Text = Calk(g.Next(0, 10), g1);
+            label2.Text = Calk(g.Next(0, 10), g1);
+            label3.Text = Calk(g.Next(0, 10), g1);
+            label4.Text = Calk(g.Next(0, 10), g1);
+            label5.Text = Calk(g.Next(0, 10), g1);
+            label6.Text = Calk(g.Next(0, 10), g1);
+            label7.Text = Calk(g.Next(0, 10), g1);
+            label8.Text = Calk(g.Next(0, 10), g1);
+            label9.Text = Calk(g.Next(0, 10), g1);
+            label10.Text = Calk(g.Next(0, 10), g1);
             /* theta */
         }
 
