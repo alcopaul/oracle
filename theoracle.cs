@@ -13,23 +13,14 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
-        private static Random g = new Random(-7);    // negative seven
+        private static Random g = new Random(27);    // negative seven
         private static string[] g1 = { "0000", "0001", "0010", "0011", "0100", "0101", "0110", "0111", "1000", "1001" };
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Tick += new EventHandler(TimerEventProcessor);
-            timer.Interval = (1000) * (7);   // seven
-            timer.Enabled = true;
-            timer.Start();
-        }
-
-        private  void TimerEventProcessor(Object myObject, EventArgs myEventArgs)
+        private void TimerEventProcessor(Object myObject, EventArgs myEventArgs)
         {
             label1.Text = Calk(g.Next(0, 10), g1);
             label2.Text = Calk(g.Next(0, 10), g1);
@@ -48,9 +39,20 @@ namespace WindowsFormsApplication1
         {
             return g3[g];
         }
-    private void label1_Click(object sender, EventArgs e)
-    {
-        MessageBox.Show("April 02, 2016");
-    }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+            timer.Tick += new EventHandler(TimerEventProcessor);
+            timer.Interval = (999) * (7);   // seven
+            timer.Enabled = true;
+            timer.Start();
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("May 02, 2016");
+        }
     }
 }
